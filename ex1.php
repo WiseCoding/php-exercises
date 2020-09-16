@@ -2,8 +2,6 @@
 
 declare(strict_types=1);
 
-include 'ex2.php';
-
 class Beverage
 {
   public $temperature, $color, $price;
@@ -17,6 +15,6 @@ class Beverage
 
   public function getInfo(): string
   {
-    return "Lets drink " . $this->temperature . " and " . $this->color . ".";
+    return "The temperature is " . $this->temperature . " and the color is " . $this->color . ".";
   }
 }
