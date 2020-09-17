@@ -32,3 +32,12 @@ class Beverage
     return "The temperature is " . $this->temperature . " and the color is " . $this->color . ".";
   }
 }
+
+// INSTANTIATE
+$cola = new Beverage('black', 2);
+
+// ECHOES
+echo $cola->temperature;
+echo '<br/>';
+echo $cola->getInfo();
+echo '<br/>';

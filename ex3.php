@@ -50,7 +50,7 @@ class Beer extends Beverage
   }
 
   // GETTERS
-  public function getAlcoholpercentage(): string
+  public function alcoholInfo(): string
   {
     return 'The alcohol percentage is: ' . $this->alcohol_percentage . ' %';
   }
@@ -72,7 +72,7 @@ class Beer extends Beverage
   // METHODS
   public function beerInfo(): string
   {
-    return 'Hi i\'m ' . $this->name . ' and have an alcohol percentage of ' . $this->alcohol_percentage . '% and I have a ' . $this->color . ' color.';
+    return 'Hi i\'m ' . $this->name . ' and have an alcohol percentage of ' . $this->alcohol_percentage . '% and I have a ' . $this->color . ' color. It costs ';
   }
 }
 
@@ -82,7 +82,7 @@ $duvel = new Beer('Duvel', 8.5, 'Blond', 3.5);
 // ECHOES
 echo $duvel->getAlcohol_percentage() . '<br/>';
 echo '<br/>';
-echo $duvel->getAlcoholpercentage() . '<br/>';
+echo $duvel->alcoholInfo() . '<br/>';
 echo '<br/>';
 echo $duvel->getColor() . '<br/>';
 echo '<br/>';

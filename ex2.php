@@ -41,13 +41,21 @@ class Beer extends Beverage
 }
 
 $duvel = new Beer('Duvel', 8.5, 'Blond', 3.5);
-$fanta = new Beverage('Brown', 2.5, 'hot');
 
-echo $duvel->alcohol_percentage . '<br/>';
-echo $duvel->getAlcoholpercentage() . '<br/>';
-echo $duvel->color . '<br/>';
+echo $duvel->alcohol_percentage;
 echo '<br/>';
-echo $duvel->getInfo() . '<br/>';
+echo $duvel->getAlcoholpercentage();
+echo '<br/>';
+echo $duvel->color;
+echo '<br/>';
+echo $duvel->getInfo();
 echo '<br/>';
 echo '<br/>';
-echo $fanta->getAlcoholpercentage() . '<br/>';
+
+
+$cola = new Beverage('black', 2);
+echo $cola->temperature;
+echo '<br/>';
+echo $cola->getInfo();
+echo '<br/>';
+echo $cola->getAlcoholpercentage(); // Intentional error

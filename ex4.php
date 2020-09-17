@@ -30,7 +30,7 @@ class Beverage
 
 class Beer extends Beverage
 {
-  private $name, $alcohol_percentage;
+  protected $name, $alcohol_percentage;
 
   public function __construct(string $name, float $alcohol_percentage, string $color, float $price, string $temperature = "cold")
   {
